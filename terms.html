@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Положение</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .logo {
+            max-width: 180px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInDown {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .terms-container {
+            width: 100%;
+            max-width: 800px;
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #222;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 25px 0 15px;
+            color: #444;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 20px 0 10px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        li:before {
+            content: "·";
+            position: absolute;
+            left: -15px;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .contact-info {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #004499;
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background: #333;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 140px;
+                margin-bottom: 20px;
+            }
+            .terms-container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .btn {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                max-width: 120px;
+                margin-bottom: 15px;
+            }
+            .terms-container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            p, ul {
+                font-size: 15px;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="../img/logo_black.png" alt="Логотип проекта 5×5×5" class="logo">
+
+    <div class="terms-container">
+        <h1>Положение о проекте 5×5×5</h1>
+
+        <h2>1. Общие положения</h2>
+        
+        <h3>1.1. Организатор</h3>
+        <p>Семенова Ольга Владимировна.</p>
+        
+        <h3>1.2. Сроки проведения</h3>
+        <p>Проект проводится с <span class="highlight">28.07.2025 по 31.08.2025</span>.</p>
+        
+        <h3>1.3. Цель проекта</h3>
+        <p>Создание уникальных творческих работ в формате конкурса среди фотографов и визажистов.</p>
+
+        <h2>2. Условия участия</h2>
+        
+        <h3>2.1. Участники</h3>
+        <ul>
+            <li><strong>Фотографы:</strong> 5 человек, взнос — <span class="highlight">5 000 ₽</span></li>
+            <li><strong>Визажисты:</strong> 5 человек, взнос — <span class="highlight">5 000 ₽</span></li>
+        </ul>
+        
+        <h3>2.2. Требования к участникам</h3>
+        <ul>
+            <li>Возраст от 18 лет</li>
+            <li>Наличие портфолио</li>
+        </ul>
+        
+        <h3>2.3. Порядок отбора</h3>
+        <p>Отбор участников осуществляется на основе заявки и собеседования. Организатор оставляет за собой право отказать в участии без объяснения причин.</p>
+
+        <h2>3. Финансовые условия</h2>
+        
+        <h3>3.1. Включено во взнос</h3>
+        <ul>
+            <li>Участие в 5 съемочных днях</li>
+            <li>Организационные расходы (локации, реквизит)</li>
+        </ul>
+        
+        <h3>3.2. Возврат средств</h3>
+        <p>Возврат средств не предусмотрен ни при каких обстоятельствах, включая:</p>
+        <ul>
+            <li>Отказ участника от участия после оплаты</li>
+            <li>Изменение дат или формата проекта</li>
+            <li>Неучастие в отдельных этапах проекта</li>
+        </ul>
+        
+        <h3>3.3. Исключение</h3>
+        <p>Полный возврат производится только при отмене проекта по инициативе организатора.</p>
+
+        <h2>4. Авторские и имущественные права</h2>
+        
+        <h3>4.1. Согласие на использование изображений</h3>
+        <p>Участники соглашаются на использование их работ и изображений в промоматериалах (ст. 152.1 ГК РФ).</p>
+        
+        <h3>4.2. Права на работы</h3>
+        <p>Участники сохраняют авторские права на созданные работы, но предоставляют организатору бессрочную неисключительную лицензию на их использование.</p>
+
+        <h2>5. Персональные данные</h2>
+        <p>Данные участников обрабатываются в соответствии с Федеральным законом №152 «О персональных данных».</p>
+
+        <h2>6. Форс-мажор</h2>
+        <p>Организатор оставляет за собой право перенести дату проведения проекта при любых обстоятельствах, не зависящих от организатора.</p>
+
+        <div class="contact-info">
+            <h2>7. Контакты</h2>
+            <p><strong>VK:</strong> <a href="https://vk.com/5x5x5x_obrazov" target="_blank">vk.com/5x5x5x_obrazov</a></p>
+            <p><strong>Telegram:</strong> <a href="https://t.me/obraz_5x5x5x" target="_blank">t.me/obraz_5x5x5x</a></p>
+            <p><strong>Телефон:</strong> +7 927 666-15-94 (Ольга)</p>
+        </div>
+    </div>
+
+    <a href="https://disk.yandex.ru/d/CbvxHAXsKSojCw" class="btn">Скачать</a>
+    <a href="https://smnv-prod.github.io/5x5x5" class="btn">Вернуться на главную</a>
+</body>
+</html>
